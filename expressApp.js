@@ -101,7 +101,7 @@ app.post('/vehicles', (req, res) => {
         });
 
     }
-
+   // new commit
     const newVehicle = {
         id: id,
         vehicleName: req.body.vehicleName,
@@ -111,12 +111,10 @@ app.post('/vehicles', (req, res) => {
     };
 
     vehicles.push(newVehicle);
-
     res.status(201).json({
         message: "Vehicle added successfully",
         vehicle: newVehicle
     });
-
 });
 
 app.put('/vehicles/:id', (req, res) => {
