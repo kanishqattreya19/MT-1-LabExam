@@ -171,7 +171,6 @@ app.delete('/vehicles/:id', (req, res) => {
     }
 
     const deletedVehicle = vehicles.splice(index, 1);
-
     res.status(200).json({
         message: "Vehicle deleted successfully",
         vehicle: deletedVehicle[0]
